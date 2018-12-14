@@ -17,7 +17,7 @@ services:
     command: node index.js
     environment:
       - INFLUX_DB_HOST=influxdb_moto:8086
-      - DARKSKY_API_KEY=44ae091396a4b43aa01a73b566ea6182
+      - DARKSKY_API_KEY=999
       - CRON_SCHEDULE=20
     depends_on:
       - influxdb_moto
