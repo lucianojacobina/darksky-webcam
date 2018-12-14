@@ -18,6 +18,6 @@ RUN apt-get update && apt-get install -y wget --no-install-recommends \
 RUN npm i puppeteer
 
 ENV INFLUX_DB_HOST localhost:8086/
-ENV DARKSKY_API_KEY 44ae091396a4b43aa01a73b566ea6182
+ENV DARKSKY_API_KEY 9999
 ENV CRON_SCHEDULE 01
 CMD node index.js $INFLUX_DB_HOST $DARKSKY_API_KEY $CRON_SCHEDULE
