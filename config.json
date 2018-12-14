@@ -1,0 +1,18 @@
+{
+  "locations": [
+  {
+    "name": "DER-SP 125 - km 4_5",
+    "latitude": -23.045418,
+    "longitude": -45.557033  
+  },
+  {
+    "name": "DER-SP 125 - km 81",
+    "latitude": -23.375487,
+    "longitude": -45.114815
+  },
+  {
+    "name": "DER-SP 125 - km 94",
+    "latitude": -23.433820,
+    "longitude": -45.087065  
+  }]
+}

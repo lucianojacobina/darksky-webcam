@@ -1,0 +1,17 @@
+{
+  "name": "darksky-webcam",
+  "version": "0.0.1",
+  "description": "Collect: i) weather data from Dark Sky API, ii) pictures from Department of Roads of the state of São Paulo/Brazil Webcam`s and save locally",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luciano Jacobina Aires <luciano.mja2@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dark-sky": "^1.1.2",
+    "influx": "^5.0.7",
+    "node-cron": "^1.2.1",
+    "puppeteer": "^1.6.2"
+  }
+}

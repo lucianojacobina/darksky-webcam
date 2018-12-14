@@ -1,0 +1,38 @@
+version: '3.7'
+services:
+  influxdb_moto:
+    container_name: influxdb_moto 
+    image: influxdb:latest
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 8086:8086
+    volumes:
+      - esdata1:/usr/share/influxdb/data
+
+  backend_darksky_der:
+    container_name: backend_darksky_der_moto
+    restart: always
+    image: lucianomja2/darksky-webcam
+    command: node index.js
+    environment:
+      - INFLUX_DB_HOST=influxdb_moto:8086
+      - DARKSKY_API_KEY=44ae091396a4b43aa01a73b566ea6182
+      - CRON_SCHEDULE=20
+    depends_on:
+      - influxdb_moto
+    ports:
+      - 5000:5000
+    volumes:
+      - ./moto-app:/opt/moto-app
+
+  grafana_moto:
+    container_name: grafana_moto
+    restart: always
+    image: grafana/grafana:latest
+    volumes:
+      - ./moto-app:/opt/grafana
+
+volumes:
+    esdata1:
+      driver: local
