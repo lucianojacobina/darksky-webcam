@@ -9,11 +9,13 @@ $ git clone https://github.com/lucianojacobina/darksky-webcam.git
  b) edit the docker-compose.yml file. Change the environment variables of the container "backend_darksky_der":
 - the darksky-api key (DARKSKY_API_KEY) that can be obtained from the site https://darksky.net/dev/login;
 - data search interval(CRON_SCHEDULE) in minutes. Twenty minutes in the example below;
+- the full public facing url (GF_SERVER_ROOT_URL)
 
 environment:    
 - INFLUX_DB_HOST=influxdb_moto:8086
 - DARKSKY_API_KEY=99999999999999999999999999999999 
 - CRON_SCHEDULE=20
+- GF_SERVER_ROOT_URL=http://grafanaservername:3000
 
 c) install docker
 
