@@ -30,6 +30,10 @@ services:
     container_name: grafana_moto
     restart: always
     image: grafana/grafana:latest
+    environment:
+      - GF_SERVER_ROOT_URL=http://grafana.server.name
+    ports:
+      - 3000:3000    
     volumes:
       - ./moto-app:/opt/grafana
 
