@@ -6,8 +6,8 @@ a) clone the project directory in github
     $ git clone https://github.com/lucianojacobina/darksky-webcam.git
 
  b) edit the docker-compose.yml file. Change the environment variables of the container "backend_darksky_der":
-    - the darksky-api key (DARKSKY_API_KEY) that can be obtained from the site https://darksky.net/dev/login;
-    - data search interval(CRON_SCHEDULE) in minutes. Twenty minutes in the example below;
+- the darksky-api key (DARKSKY_API_KEY) that can be obtained from the site https://darksky.net/dev/login;
+- data search interval(CRON_SCHEDULE) in minutes. Twenty minutes in the example below;
            environment:    
                 - INFLUX_DB_HOST=influxdb_moto:8086
                 - DARKSKY_API_KEY=99999999999999999999999999999999 
