@@ -2,8 +2,9 @@ Collect weather data from Dark Sky API and save to an Influx DB. Scrape pictures
 
 ---> Run every xx minutes using docker-compose:
  
-a) clone the project directory in github
-    $ git clone https://github.com/lucianojacobina/darksky-webcam.git
+a) clone the project:
+
+$ git clone https://github.com/lucianojacobina/darksky-webcam.git
 
  b) edit the docker-compose.yml file. Change the environment variables of the container "backend_darksky_der":
 - the darksky-api key (DARKSKY_API_KEY) that can be obtained from the site https://darksky.net/dev/login;
