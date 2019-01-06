@@ -1,6 +1,6 @@
 // sudo docker start a2df4debeefd
 // sudo docker exec -it elegant_khorana influx
-// sudo INFLUX_DB_HOST=localhost:8086/ DARKSKY_API_KEY=44ae091396a4b43aa01a73b566ea6182 node index.js
+// sudo INFLUX_DB_HOST=localhost:8086/ DARKSKY_API_KEY=99999999999999999999999999999999 node index.js
 
 // https://codeburst.io/a-guide-to-automating-scraping-the-web-with-javascript-chrome-puppeteer-node-js-b18efb9e9921
 // https://pptr.dev/
