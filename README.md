@@ -18,3 +18,15 @@ b) Edit the docker-compose.yml file. Change the environment variables of the con
 c) Install docker
 
 d) Run the docker-compose up in the directory where the project was cloned
+
+e) Create Grafana dashboard 
+- open your dashboard (http://grafanaservername:3000)
+- create InfluxDB
+  - configuration/datasources
+     - HTTP
+         - URL: http://influxdbservername:8086
+         - Access: Browser
+     - InfluxDB Details
+         - Database: forecast
+         - User: admin
+         - Password: admin
