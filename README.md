@@ -20,6 +20,11 @@ c) Install docker
 d) Run the docker-compose up in the directory where the project was cloned
 
 e) Create Grafana dashboard 
+- install Grafana plugins:
+  - open grafana container (sudo docker exec -it grafana_moto sh)
+  - install
+     - grafana-cli plugins install bessler-pictureit-panel
+     - grafana-cli plugins install larona-epict-panel
 - open your dashboard (http://grafanaservername:3000)
 - create InfluxDB
   - configuration/datasources
