@@ -26,11 +26,12 @@ e) Create Grafana dashboard
      - grafana-cli plugins install bessler-pictureit-panel
      - grafana-cli plugins install larona-epict-panel
 - open your dashboard (http://grafanaservername:3000)
-  - for example: localhost:3000
+     - Example: localhost:3000
 - create InfluxDB
   - configuration/datasources
      - HTTP
          - URL: http://influxdbservername:8086
+              - Example:  http://localhost:8086
          - Access: Browser
      - InfluxDB Details
          - Database: forecast
